@@ -9,7 +9,7 @@ class Timer extends Component {
       time: 0
     }
 
-    this.timer;
+    this.timer
   }
 
   componentDidMount () {
@@ -17,7 +17,11 @@ class Timer extends Component {
   }
 
   componentWillUnmount () {
-    clearInterval(this.timer);
+    clearInterval(this.timer)
+  }
+
+  componentWillReceiveProps (nextProps) {
+    console.log('componentWillReceiveProps', this.props, nextProps)
   }
 
   render () {
