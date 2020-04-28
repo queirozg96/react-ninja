@@ -10,7 +10,6 @@ class Plugin extends Component {
 
   handleClick () {
     this.myInput.focus()
-    console.log('clicou no botao', this.myInput)
   }
 
   render () {
