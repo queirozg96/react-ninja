@@ -29,6 +29,7 @@ module.exports = validate({
     new webpack.optimize.OccurrenceOrderPlugin(),
     new HtmlPlugin({
       title: 'GitHub App',
+      inject: false,
       template: path.join(__dirname, 'src', 'html', 'template.html')
     }),
   ],
@@ -50,7 +51,7 @@ module.exports = validate({
       test: /\.css$/,
       exclude: /node_modules/,
       include: /src/,
-      loader: ExtractTextPlugin.extract('style', 'css')
+      loader: ExtractTextPlugin.extract('style', 'css?modules')
     }]
   }
 })
