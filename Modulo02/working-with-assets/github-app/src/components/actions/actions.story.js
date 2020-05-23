@@ -1,6 +1,6 @@
 'use state'
 
-import React from 'react';
+import React from 'react'
 import { storiesOf, action } from '@kadira/storybook'
 import Actions from './index'
 
