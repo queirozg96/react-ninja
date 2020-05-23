@@ -1,9 +1,13 @@
 'use state'
 
 import React from 'react';
-import { storiesOf } from '@kadira/storybook'
+import { storiesOf, action } from '@kadira/storybook'
+import Actions from './index'
 
-storiesOf('Div', module)
+storiesOf('Actions', module)
   .add('first story', () => (
-    <div>Hello</div>
+    <Actions
+      getRepos={action('Get repos')}
+      getStarred={action('Get starred')}
+    />
   ))
