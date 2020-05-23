@@ -20,7 +20,7 @@
     "style-loader": "^0.13.1",
     "webpack": "^1.13.1",
     "webpack-dashboard": "^0.2.0",
-    "webpack-dev-server": "^1.16.5",
+    "webpack-dev-server": "^3.1.11",
     "webpack-validator": "^2.2.2",
     "@kadira/storybook": "^2.21.0"
   },
